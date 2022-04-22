@@ -1,0 +1,1 @@
+﻿Get-ADUser -filter * -Properties Name, SamAccountName, EmployeeID, CanonicalName, LastLogonDate, Enabled | Where-Object {($_.DistinguishedName -notlike "*OU=-011 USERS OUT COMPANY*") -and ($_.DistinguishedName -notlike "*CN=Users*")} | Export-Csv -Path C:\users\enric.ferrer\Desktop\ExportAD.csv -Delimiter ";" -Encoding UTF8

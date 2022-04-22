@@ -1,0 +1,1 @@
+﻿Ping.exe -t HOSTNAME | ForEach {"{0} - {1}" -f (Get-Date),$_}

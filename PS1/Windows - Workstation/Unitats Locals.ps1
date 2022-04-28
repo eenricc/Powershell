@@ -1,0 +1,1 @@
+﻿Get-Volume | Where-Object -Property drivetype -eq Fixed | Where-Object -Property DriveLetter -ne $null
